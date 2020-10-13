@@ -7,7 +7,10 @@ export class Footer extends Component {
            
             
             <div className="footer">
-              <p>Footer</p>
+              <span>
+              <button disabled={this.props.nameOfTheRestaurantsClicked===''} type="button" className="btn btn-style" onClick={()=>{this.props.unavailableAll(this.props.nameOfTheRestaurantsClicked)}}>All Unavailable</button>
+              <button disabled={this.props.nameOfTheRestaurantsClicked===''} type="button" className="btn btn-style" onClick={()=>{this.props.availableAll(this.props.nameOfTheRestaurantsClicked)}}>All Available</button>
+              </span>
             </div>
             </div>
         )

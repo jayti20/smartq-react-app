@@ -2,8 +2,26 @@
     position: fixed;
     left: 0;
     bottom: 0;
+    padding-top: 15px;
     width: 100%;
-    background-color:orange;
+    background-color:lightgrey;
     color: white;
     text-align: center;
+  }
+
+  .btn-style {
+   
+  
+  
+    background-color:orange;
+    margin-right: 20px;
+    border-radius: 8px;
+    margin-bottom: 5px;;
+  
+    
+   
+    
+ 
+    
+  
   }

@@ -1,4 +1,4 @@
-export const restaurant=[{
+ const restaurant={
     "menuDetails": {
       "EATORAMA": [
         {
@@ -235,4 +235,36 @@ export const restaurant=[{
         }
       ]
     }
-  }]
+  }
+  const arr=[];
+  const abcKeys=[];
+  const val1=[];
+  for(var key in restaurant)
+  {
+    if(restaurant.hasOwnProperty(key))
+    {
+      var val=restaurant[key];
+      console.log(restaurant[key])
+      console.log(val)
+      arr.push(val);
+      console.log('menudetails are',arr)
+     
+      for(var key1 in restaurant['menuDetails'])
+      {
+        
+       
+        if(restaurant['menuDetails'].hasOwnProperty(key1))
+        {
+           val1.push(restaurant['menuDetails'][key1])
+          
+        
+        }
+      }
+      
+    }
+  }
+  abcKeys.push(Object.keys(restaurant['menuDetails']))
+  console.log(arr)
+  console.log(abcKeys)
+  console.log(val1)
+  export  {arr,abcKeys,val1};
